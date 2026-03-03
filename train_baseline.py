@@ -11,11 +11,13 @@ def main():
     # 'epochs' is how many times the model sees the full dataset
     # 'imgsz' is the resolution (640 is standard)
     results = model.train(
-        data="datasets/FVP-Baseline.v1-v3.yolov8/data.yaml", 
-        epochs=50, 
+        data="datasets/FVP-Baseline.v5-v5.yolov8/data.yaml", 
+        epochs=150, 
         imgsz=640,
+        mixup=0.1,
+        patience=50,
         device=0, # Change to device='cpu' if you don't have an NVIDIA GPU
-        workers=0
+        workers=4
     )
 
 if __name__ == "__main__":
