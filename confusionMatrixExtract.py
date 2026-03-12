@@ -7,14 +7,14 @@ from ultralytics import YOLO
 # ==========================================
 # 1. CONFIGURATION PATHS
 # ==========================================
-MODEL_PATH = 'best_v5.pt'
-IMAGES_PATH = r'D:\Jeremy\UoN\Year 4\Final Year Project Coding\FYP_BaselineNN\datasets\FVP-Baseline.v5-v5.yolov8\valid\images'
-LABELS_PATH = r'D:\Jeremy\UoN\Year 4\Final Year Project Coding\FYP_BaselineNN\datasets\FVP-Baseline.v5-v5.yolov8\valid\labels'
-OUTPUT_DIR = r'D:\Jeremy\UoN\Year 4\Final Year Project Coding\FYP_BaselineNN\runs\detect\FYP_Matrix_Proof'
+MODEL_PATH = 'best_v6.pt'
+IMAGES_PATH = r'D:\Jeremy\UoN\Year 4\Final Year Project Coding\FYP_BaselineNN\datasets\FVP-Baseline.v6-v6.yolov8\valid\images'
+LABELS_PATH = r'D:\Jeremy\UoN\Year 4\Final Year Project Coding\FYP_BaselineNN\datasets\FVP-Baseline.v6-v6.yolov8\valid\labels'
+OUTPUT_DIR = r'D:\Jeremy\UoN\Year 4\Final Year Project Coding\FYP_BaselineNN\runs\detect\FYP_Matrix_Proof_v6'
 
 # Check your training results (F1_curve.png) to find the exact confidence YOLO used.
 # If you aren't sure, 0.50 is the standard sweet spot for strict matrices.
-CONFIDENCE_THRESHOLD = 0.614  
+CONFIDENCE_THRESHOLD = 0.639  
 IOU_THRESHOLD = 0.50
 
 model = YOLO(MODEL_PATH)
