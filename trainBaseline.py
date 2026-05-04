@@ -11,7 +11,7 @@ def main():
     # 'epochs' is how many times the model sees the full dataset
     # 'imgsz' is the resolution (640 is standard)
     results = model.train(
-        data="datasets/FVP-Baseline.v10-v10.yolov8/data.yaml", 
+        data="datasets/FVP-Baseline.v16-v16.yolov8/data.yaml", 
         epochs=150, 
         imgsz=640,
         mixup=0.1,

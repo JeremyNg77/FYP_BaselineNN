@@ -9,7 +9,9 @@ if __name__ == '__main__':
     # 2. Run the evaluation using default YOLOv8 hyperparameters
     print("Starting Final Evaluation with default settings...")
     metrics = model.val(
-        data=r'D:\Jeremy\UoN\Year 4\Final Year Project Coding\FYP_BaselineNN\datasets\FVP-Baseline.v17-vfinal.yolov8\data.yaml'
+        data=r'D:\Jeremy\UoN\Year 4\Final Year Project Coding\FYP_BaselineNN\datasets\FVP-Baseline.v17-vfinal.yolov8\data.yaml',
+        project=r'D:\Jeremy\UoN\Year 4\Final Year Project Coding\FYP_BaselineNN\runs\detect',
+        name='yolov8n_val'
     )
 
     # 3. Print Overall Metrics
