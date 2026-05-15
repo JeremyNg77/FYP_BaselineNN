@@ -5,7 +5,7 @@ from ultralytics import YOLO
 # ==========================================
 # 1. CONFIGURATION
 # ==========================================
-MODEL_PATH = "best_v5.pt"      
+MODEL_PATH = "YOLOv8n - FINAL.pt"      
 VIDEO_PATH = "Test Video.mp4"  
 OUTPUT_PATH = "counted_output.mp4"
 
